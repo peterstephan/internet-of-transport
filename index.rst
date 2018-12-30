@@ -9,7 +9,7 @@ DOCUMENTATION
 *****
 This documentation is available on ReadTheDocs.org at:
 
-`python <https://internet-of-transport.readthedocs.io>`_
+`https://internet-of-transport.readthedocs.io <https://internet-of-transport.readthedocs.io>`_
 
 *****
 MORE INFO
