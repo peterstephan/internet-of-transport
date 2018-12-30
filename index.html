@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Peter Stephan">
+    <meta name="author" content="Peter Stephan">
+    <title>Internet of Transport (IoT)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+    }
+    hr {
+      max-width: 50px;
+      border-width: 3px;
+      border-color: #256dea;
+    }
+    hr.light {
+      border-color: #fff;
+    }
+    a {
+      color: #256dea;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    a:hover {
+      color: #256dea;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    .bg-primary {
+      background-color: #256dea !important;
+    }
+    .bg-dark {
+      background-color: #212529 !important;
+    }
+    .text-faded {
+      color: rgba(255, 255, 255, 0.7);
+    }
+    section {
+      padding: 8rem 0;
+    }
+    .section-heading {
+      margin-top: 0;
+    }
+    ::-moz-selection {
+      color: #fff;
+      background: #212529;
+      text-shadow: none;
+    }
+    ::selection {
+      color: #fff;
+      background: #212529;
+      text-shadow: none;
+    }
+    img::selection {
+      color: #fff;
+      background: transparent;
+    }
+    img::-moz-selection {
+      color: #fff;
+      background: transparent;
+    }
+    #mainNav {
+      border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+      background-color: #fff;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    #mainNav .navbar-brand {
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #256dea;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: #256dea;
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+      font-size: .9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #212529;
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+      color: #256dea;
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+      color: #256dea !important;
+      background-color: transparent;
+    }
+    #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+      background-color: transparent;
+    }
+    @media (min-width: 992px) {
+      #mainNav {
+        border-color: transparent;
+        background-color: transparent;
+      }
+      #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+        color: #fff;
+      }
+      #mainNav .navbar-nav > li.nav-item > a.nav-link {
+        padding: 0.5rem 1rem;
+      }
+      #mainNav .navbar-nav > li.nav-item > a.nav-link,
+      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: rgba(255, 255, 255, 0.7);
+      }
+      #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+      #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+        color: #fff;
+      }
+      #mainNav.navbar-shrink {
+        border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+        background-color: #fff;
+      }
+      #mainNav.navbar-shrink .navbar-brand {
+        color: #256dea;
+      }
+      #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+        color: #256dea;
+      }
+      #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+      #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+        color: #212529;
+      }
+      #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+      #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+        color: #256dea;
+      }
+    }
+    header.masthead {
+      padding-top: 10rem;
+      padding-bottom: calc(10rem - 56px);
+      background-image: url("https://images.unsplash.com/photo-1530685932526-48ec92998eaa");
+      /* Other Background Images
+      https://images.unsplash.com/photo-1500893099951-bfbcb107cd0b
+      */
+      background-position: center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    header.masthead hr {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    header.masthead h1 {
+      font-size: 2rem;
+    }
+    header.masthead p {
+      font-weight: 300;
+    }
+    @media (min-width: 768px) {
+      header.masthead p {
+        font-size: 1.15rem;
+      }
+    }
+    @media (min-width: 992px) {
+      header.masthead {
+        height: 100vh;
+        min-height: 650px;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      header.masthead h1 {
+        font-size: 3rem;
+      }
+    }
+    @media (min-width: 1200px) {
+      header.masthead h1 {
+        font-size: 4rem;
+      }
+    }
+    .service-box {
+      max-width: 400px;
+    }
+    .portfolio-box {
+      position: relative;
+      display: block;
+      max-width: 650px;
+      margin: 0 auto;
+    }
+    .portfolio-box .portfolio-box-caption {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      opacity: 0;
+      color: #fff;
+      background: rgba(240, 95, 64, 0.9);
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center;
+    }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+      padding: 0 15px;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+      font-size: 18px;
+    }
+    .portfolio-box:hover .portfolio-box-caption {
+      opacity: 1;
+    }
+    .portfolio-box:focus {
+      outline: none;
+    }
+    @media (min-width: 768px) {
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+      }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+      }
+    }
+    .text-primary {
+      color: #256dea !important;
+    }
+    .btn {
+      font-weight: 700;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 300px;
+      font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    .btn-xl {
+      padding: 1rem 2rem;
+    }
+    .btn-primary {
+      background-color: #256dea;
+      border-color: #256dea;
+    }
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+      color: #fff;
+      background-color: #ee4b28 !important;
+    }
+    .btn-primary:active, .btn-primary:focus {
+      box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+    }
+    </style>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">INTERNET OF TRANSPORT</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About The Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>
+                The Internet
+                <br>of Transport
+              </strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">
+              <b>Data Acquisition | Storage | Insights</b>
+            </p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger"
+            href="mailto:mail@peterstephan.co">GET INVOLVED</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">ABOUT THE IOT PROJECT</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">
+              The Internet of Transport (IoT) aims to provide a toolkit for
+              analysts, data scientists, modellers and developers from the
+              public and private sectors in the transport and mobility industry
+              to:
+              <br>
+              (1) gather data from sources on the web,
+              <br>(2) store it in the cloud, and
+              <br>
+              (3) produce insights through visualisation, analytics,
+              alerts and messaging etc.</p>
+            <!--<a class="btn btn-light btn-xl js-scroll-trigger" href="#features">[button text]</a-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+    <section id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">My Key Interests</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-globe text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">
+                Cities <br>& Economics
+              </h3>
+              <p class="text-muted mb-0">
+                My high-level interests are in cities and the economic activity
+                that happens within them. I enjoy being able to work in and
+                contribute to the planning of major city-shaping infrastructure
+                projects, including transit systems, light rail, highways,
+                active transport and urban renewal developments.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-subway text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">
+                Transport Modelling & Planning
+              </h3>
+              <p class="text-muted mb-0">
+                I am an ambitious transport modeller and planner, with recent
+                experience providing technical and commercial advice on
+                transport infrastructure and property/urban development
+                projects of varying scale and complexity throughout Australia.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-code text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">
+                Data, GIS & Software
+              </h3>
+              <p class="text-muted mb-0">
+                New technologies are changing society. I combine my engineering
+                and consulting experience with data analytics, GIS and
+                programming. I enjoy learning increasingly more about these
+                fields and applying it to produce innovation solutions.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-car text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">
+                Future of Transport
+              </h3>
+              <p class="text-muted mb-0">
+                I'm fascinated by the changes happening in the transport world
+                such as the raise of ride-sharing platforms such as Uber, the
+                potential for apps and MaaS to provide real-time transport
+                information and improve the customer experience, through to
+                the potential for AV's, EV's, demand responsive
+                transport and high speed rail.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white" id="portfolio">
+      <div class="text-center">
+        <h2>Portfolio</h2>
+        <p>
+          Here are a few links to things I've worked on...
+        </p>
+      </div>
+    </section>
+    <!--<section class="bg-dark text-white" id="portfolio">
+      <div class="container text-center">
+        <h2 class="mb-4">Portfolio of Example Microsites</h2>
+        <a class="btn btn-light btn-xl sr-button"
+        href="">Call to action</a>
+      </div>
+    </section>-->
+    <!--
+    <section class="p-0">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+        <div class="row no-gutters">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://medium.com/predict/transport-network-impacts-of-avs-and-emerging-technologies-94cdc1c11c6" target="_blank">
+              <img class="img-fluid" src="https://cdn-images-1.medium.com/max/800/0*D__3jYNewKqhGytb.jpeg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Transport Network Impacts of AVs
+                    and Emerging Technologies
+                  </div>
+                  <div class="project-name">
+                    Presentation / Blog Post
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://medium.com/@peter.james.stephan/national-road-safety-week-2018-queensland-road-crash-statistics-951cd0f3c182">
+              <img class="img-fluid" src="https://cdn-images-1.medium.com/max/800/0*wt4SiAoDOZhnQwXM.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    National Road Safety Week 2018 — Queensland Road Crash Statistics
+                  </div>
+                  <div class="project-name">
+                    Tableau Visualisation / Blog Post
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://www.linkedin.com/in/peter-stephan/">
+              <img class="img-fluid" src="https://www.mustangmktg.com/blog/wp-content/uploads/linkedin-vector-logo.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Professional Profile
+                  </div>
+                  <div class="project-name">
+                    LinkedIn
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!--
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://github.com/petestephan">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Coding Examples
+                  </div>
+                  <div class="project-name">
+                    GitHub Profile
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="https://public.tableau.com/profile/peter.stephan#!/">
+              <img class="img-fluid" src="https://cdns.tblsft.com/sites/all/themes/tabwat/logo.png" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Data Visualisation Examples
+                  </div>
+                  <div class="project-name">
+                    Tableau Public
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="property/example6.html">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1500893099951-bfbcb107cd0b" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Project Name
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>-->
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">How to Get In Touch</h2>
+            <hr class="my-4">
+            <p class="mb-5">
+              To get in touch and discuss the project further
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-github fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="https://github.com/peterstephan/internet-of-transport">github.com/peterstephan/internet-of-transport</a>
+            </p>
+          </div>
+          <div class="col-lg-4 mr-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:mail@peterstephan.co">Peter Stephan</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.0.0/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/3.3.6/scrollreveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script>
+    (function($) {
+      "use strict"; // Start of use strict
+
+      // Smooth scrolling using jQuery easing
+      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: (target.offset().top - 57)
+            }, 1000, "easeInOutExpo");
+            return false;
+          }
+        }
+      });
+
+      // Closes responsive menu when a scroll trigger link is clicked
+      $('.js-scroll-trigger').click(function() {
+        $('.navbar-collapse').collapse('hide');
+      });
+
+      // Activate scrollspy to add active class to navbar items on scroll
+      $('body').scrollspy({
+        target: '#mainNav',
+        offset: 57
+      });
+
+      // Collapse Navbar
+      var navbarCollapse = function() {
+        if ($("#mainNav").offset().top > 100) {
+          $("#mainNav").addClass("navbar-shrink");
+        } else {
+          $("#mainNav").removeClass("navbar-shrink");
+        }
+      };
+      // Collapse now if page is not at top
+      navbarCollapse();
+      // Collapse the navbar when page is scrolled
+      $(window).scroll(navbarCollapse);
+
+      // Scroll reveal calls
+      window.sr = ScrollReveal();
+      sr.reveal('.sr-icons', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+      }, 200);
+      sr.reveal('.sr-button', {
+        duration: 1000,
+        delay: 200
+      });
+      sr.reveal('.sr-contact', {
+        duration: 600,
+        scale: 0.3,
+        distance: '0px'
+      }, 300);
+
+      // Magnific popup calls
+      $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0, 1]
+        },
+        image: {
+          tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+        }
+      });
+
+    })(jQuery); // End of use strict
+
+    </script>
+
+  </body>
+
+<!--////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+The MIT License (MIT)
+
+Copyright (c) 2013-2018 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////-->
+</html>
