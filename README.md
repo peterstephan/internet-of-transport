@@ -16,7 +16,7 @@ https://trello.com/b/PPIhscws
 Please vote and comment on Trello to help shape the future direction of this project!
 
 # Get involved or get in touch
-To get in touch about about the project or discuss how you can contribute, feel free to add me on Linkedin and send a message to discuss (https://www.linkedin.com/in/peter-stephan/) or get in touch via the details on my Github profile (https://github.com/peterstephan)
+To get in touch about the project or discuss how you can contribute, feel free to add me on Linkedin and send a message to discuss (https://www.linkedin.com/in/peter-stephan/) or get in touch via the details on my Github profile (https://github.com/peterstephan)
 
 Cheers,
 
