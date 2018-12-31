@@ -7,7 +7,7 @@
 ####              on a scheduled (cron) basis
 ####
 #### AWS Lambda settings:
-####    trigger:  setup a CloudWatch event on a schedule basis, say every 5/10/15/30/60 minutes etc
+####    trigger:  setup a CloudWatch event on a scheduled basis, say every 5/10/15/30/60 minutes etc
 ####    runtime:  Python 2.7
 ####    handler:  google_dm_api_to_aws_s3.save_to_bucket
 ####
