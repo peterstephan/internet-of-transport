@@ -33,7 +33,7 @@ def save_to_bucket(event, context):
     dt_str = dt_str.replace('-','') # resulting format: yyyymmddhhmm
     
     ## Google Maps API key
-    google_api_key = "YOUR_API_KEY" # Registered for a Google Maps API Key and insert it here
+    google_api_key = "YOUR_API_KEY" # Register for a Google Maps API Key and insert it here. Link: https://cloud.google.com/maps-platform/
 
     ## Construct the URL to query
     # Refer to here for documentation on the Google Maps Distance Matrix API:
