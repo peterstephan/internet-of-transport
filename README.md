@@ -10,5 +10,13 @@ The project documentation is available on ReadTheDocs.io at:
 https://internet-of-transport.readthedocs.io/
 
 # Project Roadmap
-The project roadmap is publically available on Trello here:
+The project roadmap is publically available on Trello here.
 https://trello.com/b/PPIhscws
+
+Please vote and comment on Trello to help shape the future direction of this project!
+
+# Get involved or get in touch
+To get in touch about about the project or discuss how you can contribute, feel free to add me on Linkedin and send a message to discuss: https://www.linkedin.com/in/peter-stephan/
+
+Cheers,
+-Peter
