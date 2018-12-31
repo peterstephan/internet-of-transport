@@ -8,3 +8,7 @@ https://peterstephan.github.io/internet-of-transport/
 # Documentation
 The project documentation is available on ReadTheDocs.io at:
 https://internet-of-transport.readthedocs.io/
+
+# Project Roadmap
+The project roadmap is publically available on Trello here:
+https://trello.com/b/PPIhscws
